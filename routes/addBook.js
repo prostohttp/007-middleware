@@ -8,7 +8,7 @@ router.post("/api/books", fileMulter.single("fileBook"), (req, res) => {
 	const { books } = bookStore;
 
 	if (req.file) {
-		const {path} = req.file;
+		const { path } = req.file;
 		const {
 			title,
 			description,
@@ -18,18 +18,17 @@ router.post("/api/books", fileMulter.single("fileBook"), (req, res) => {
 			fileName,
 		} = req.body;
 		const newBook = new Book(
-		title,
-		description,
-		authors,
-		favorite,
-		fileCover,
-		fileName,
-		path
-	);
-	books.push(newBook);
-	res.status(201);
-	res.json(newBook);
+			title,
+			description,
+			authors,
+			favorite,
+			fileCover,
+			fileName,
+			path
+		);
+		books.push(newBook);
+		res.status(201);
+		res.json(newBook);
 	}
-
 });
 module.exports = router;
