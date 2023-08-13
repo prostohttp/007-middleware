@@ -9,6 +9,7 @@ module.exports = {
 			"file cover 1",
 			"file name 1",
 			"/public/img/1691929453302-fileBook.png",
+			"fileBook.png",
 			"123456789"
 		),
 		new Book(
@@ -18,7 +19,8 @@ module.exports = {
 			true,
 			"file cover 2",
 			"file name 2",
-			"/public/img/1691929453302-fileBook.png"
+			"/public/img/1691929453302-fileBook.png",
+			"fileBook.png"
 		),
 		new Book(
 			"title 3",
@@ -27,7 +29,8 @@ module.exports = {
 			true,
 			"file cover 3",
 			"file name 3",
-			"/public/img/1691929453302-fileBook.png"
+			"/public/img/1691929453302-fileBook.png",
+			"fileBook.png"
 		),
 	],
 };

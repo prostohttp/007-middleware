@@ -10,6 +10,7 @@ class Book {
 	 * @param {string} fileCover - The file cover of the book.
 	 * @param {string} fileName - The file name of the book.
 	 * @param {string} fileBook - The file of the book.
+	 * @param {string} originalname - The original name of file of the book.
 	 * @param {string} id - The ID of the book.
 	 */
 	constructor(
@@ -20,6 +21,7 @@ class Book {
 		fileCover = "",
 		fileName = "",
 		fileBook = "",
+		originalName = "",
 		id = uuid()
 	) {
 		this.title = title;
@@ -29,6 +31,7 @@ class Book {
 		this.fileCover = fileCover;
 		this.fileName = fileName;
 		this.fileBook = fileBook;
+		this.originalName = originalName
 		this.id = id;
 	}
 }

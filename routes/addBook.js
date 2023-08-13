@@ -8,7 +8,7 @@ router.post("/api/books", fileMulter.single("fileBook"), (req, res) => {
 	const { books } = bookStore;
 
 	if (req.file) {
-		const { path } = req.file;
+		const { path, originalname } = req.file;
 		const {
 			title,
 			description,
@@ -24,7 +24,8 @@ router.post("/api/books", fileMulter.single("fileBook"), (req, res) => {
 			favorite,
 			fileCover,
 			fileName,
-			path
+			path,
+			originalname
 		);
 		books.push(newBook);
 		res.status(201);
